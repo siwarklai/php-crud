@@ -1,0 +1,382 @@
+/* Global Styles */
+/* Reset global styles */
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+      Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background-color: #F6F5F2; /* Soft off-white background color */
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #523f30;
+}
+
+a:hover {
+  color: #c5bfbc;
+}/* Navigation top bar */
+.navtop {
+  background-color: #ccc; /* Light gray background */
+  height: 60px;
+  width: 100%;
+  border: 0;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the child elements */
+  align-items: center; /* Center the child elements vertically */
+  padding: 0; /* Remove any default padding */
+  margin: 0; /* Remove any default margin */
+}
+
+/* Navigation top bar container */
+.navtop div {
+  display: flex;
+  margin: 0 auto;
+  margin-left: 130px;
+  width: 1000px;
+  height: 100%;
+  justify-content: center; /* Center the content inside the div */
+  align-items: center; /* Center the content vertically inside the div */
+}
+
+/* Navigation top bar heading styling */
+.navtop div h1 {
+  flex: 1;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  color: #333; /* Dark gray color for heading */
+  font-weight: normal;
+}
+
+/* Navigation top bar link styling */
+.navtop div a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: #333; /* Dark gray color for links */
+  font-weight: bold;
+}
+
+/* Navigation top bar link hover effect */
+.navtop div a:hover {
+  color: #666; /* Light gray color on hover */
+}
+
+/* Content Styles */
+
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newtask {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.newtask h2 {
+  margin-top: 0;
+}
+
+.newtask label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.newtask input[type="text"],.newtask input[type="email"],.newtask input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.newtask input[type="submit"] {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newtask input[type="submit"]:hover {
+  background-color: #23527c;
+}
+/* Table Styles for Reserved.php */
+
+.read {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.read h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.read a.newtask {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.read a.newtask:hover {
+  background-color: #23527c;
+}
+
+.read table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.read th,
+.read td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.read th {
+  background-color: #f0f0f0;
+}
+
+.read .actions {
+  text-align: center;
+}
+
+.read .actions a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.read .actions a:hover {
+  color: #23527c;
+}
+
+.read .pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.read .pagination a {
+  margin-right: 10px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.read .pagination a:hover {
+  color: #23527c;
+}
+/* Table Styles for Reserved.php */
+
+.read {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.read h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.read a.newtask {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.read a.newtask:hover {
+  background-color: #23527c;
+}
+
+.read table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.read th,
+.read td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.read th {
+  background-color: #f0f0f0;
+  font-weight: bold; /* Make the table header text bold */
+  font-size: 16px; /* Adjust the font size of the table header */
+  color: #333; /* Set the color of the table header text */
+  text-transform: uppercase; /* Convert the text to uppercase */
+}
+
+.read td {
+  font-size: 14px; /* Adjust the font size of table data */
+}
+
+.read .actions {
+  text-align: center;
+}
+
+.read .actions a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.read .actions a:hover {
+  color: #23527c;
+}
+
+.read .pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.read .pagination a {
+  margin-right: 10px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.read .pagination a:hover {
+  color: #23527c;
+}
+
+/* Additional CSS for the image cards */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: calc(33.33% - 20px); /* Adjust the width of each card */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-icons a {
+  margin-right: 10px;
+  color: #333;
+}
+
+.card-icons a:hover {
+  color: #23527c;
+}
+/* Form Styles */
+
+.newreser {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.newreser h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.newreser label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.newreser input[type="text"],
+.newreser input[type="email"],
+.newreser input[type="date"],
+.newreser input[type="tel"],
+.newreser input[type="datetime-local"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newreser input[type="submit"],
+.newreser input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newreser input[type="submit"]:hover,
+.newreser input[type="button"]:hover {
+  background-color: #23527c;
+}
+
+.newreser input[type="button"] {
+  margin-top: 10px;
+  background-color: #ccc;
+}
+
+.newreser input[type="button"]:hover {
+  background-color: #bbb;
+}
+
+.newreser p {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+}
